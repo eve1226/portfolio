@@ -62,7 +62,7 @@ ul li {
   align-items: center;
   width: 100%;
   padding: 100px 0px 100px 0px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 224, 202);
 }
 
 .character img {
@@ -75,13 +75,13 @@ ul li {
   font-size: 2rem;
   font-family:'DM Sans', sans-serif;
   letter-spacing:10px;
-  color:rgb(255, 137, 200);
+  color:rgb(57, 57, 57);
 }
 
 
 
 .title {
-  
+
   text-align: center;
 }
 
@@ -92,7 +92,8 @@ ul li {
 
 .title .font2{
   font-size: 4rem;
-  color:Black;
+  color: #3586ff;
+  font-family: Black Han Sans,sans-serif;
 }
 
 /* wrap */
