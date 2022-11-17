@@ -5,7 +5,7 @@
 body {
   background-color: #ffffff;
   margin:0;
-  font-family:'DM Sans', 'Black Han Sans', 'Noto Sans KR',sans-serif;
+  font-family:'Noto Sans KR',sans-serif; 
   line-height:normal}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:normal;
 }
 
@@ -61,11 +61,11 @@ ul li {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 100px 0px 100px 0px;
   background-color: rgb(255, 255, 255);
 }
 
 .character img {
-  padding-top:50px;
   width: 150px;
 }
 
@@ -92,23 +92,132 @@ ul li {
 
 .title .font2{
   font-size: 4rem;
-  color:#363636;
+  color:Black;
 }
 
-/* design */
-.design {
+/* wrap */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  min-height: 20vh;
+
+  padding: 100px 0px 100px 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.aboutMe {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: 'article_title article_title article_title'
+                       'name birth address'
+                       'phone email Education';
+}
+
+.aboutMe > div{
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_title{
+  grid-area: article_title;
+}
+.name {
+  grid-area: name;
+}
+.birth {
+  grid-area: birth;
+}
+.address {
+  grid-area: address;
+}
+.phone {
+  grid-area: phone;
+}
+.email {
+  grid-area: email;
+}
+.Education {
+  grid-area: Education;
+}
+
+.warp_s {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 40px 1fr;
+  grid-template-rows: 30px 30px;
+  grid-template-areas: 'icon nameN'
+                       'icon nameW';
+}
+
+.warp_s > div{
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  grid-area: icon;
+  opacity: 0.9;
+  padding-top:3px;
+}
+.nameN{
+  grid-area: nameN;
+  font-weight:bold;
+  font-size: 20px;
+  color:#424242;
+}
+.nameW{
+  grid-area: nameW;
+  font-size: 16px;
+  color:#555555;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.article_title{
+  display: flex;
+  font-family: Black Han Sans,sans-serif;
+  font-size: 3rem;
+}
+
+.workExperience{
+  width:100%;
+  height:200px;
+  background:rgb(225, 106, 170);
+}
+
+.certificate{
+  width:100%;
+  height:200px;
+  background:rgb(255, 172, 216);
+}
+
+.career{
+  width:100%;
+  height:200px;
+  background:rgb(157, 27, 96);
+}
+
+.design{
+  width:100%;
+  height:200px;
+  background:rgb(75, 8, 44);
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background-color: #3586ff;
   min-height: 100px;
-  padding-bottom: 50px;
-  
+  padding-bottom: 20px;
 }
 
 footer .social_icon {
@@ -130,7 +239,8 @@ footer .social_icon li a {
 }
 
 footer .social_icon li a:hover {
-  transform: translateY(-10px);
+  transform: translateY(-3px);
+  opacity: 0.8;
 }
 
 footer .copyright {
