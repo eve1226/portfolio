@@ -61,12 +61,13 @@ ul li {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height:500px;
   padding: 100px 0px 100px 0px;
   background-color: rgb(255, 224, 202);
 }
 
 .character img {
-  width: 150px;
+  width: 300px;
 }
 
 /* 시계 */
@@ -96,14 +97,13 @@ ul li {
   font-family: Black Han Sans,sans-serif;
 }
 
-/* wrap */
+/* wrap about me */
 .wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-
   padding: 100px 0px 100px 0;
   background-color: rgb(255, 255, 255);
 }
@@ -112,7 +112,7 @@ ul li {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-rows: 100px 70px 70px;
   grid-template-areas: 'article_title article_title article_title'
                        'name birth address'
                        'phone email Education';
@@ -124,6 +124,13 @@ ul li {
   align-items: center;
 }
 
+.icon_clip{
+  padding-top:5px;
+  opacity: 0.5;
+}
+.title_line{
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
 .article_title{
   grid-area: article_title;
 }
@@ -188,12 +195,84 @@ ul li {
   font-size: 3rem;
 }
 
-.workExperience{
-  width:100%;
-  height:200px;
-  background:rgb(225, 106, 170);
+/* wrap workExperience */
+.wrap1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #3586ff;
+  width: 100%;
+  padding: 100px 0px 100px 0;
 }
 
+.workExperience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  width:100%;
+}
+
+.title_line_work{
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.work_title{
+  display: flex;
+  font-family: Black Han Sans,sans-serif;
+  font-size: 3rem;
+  padding-bottom: 80px;
+}
+
+.work_warp{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.work_swarpL{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+.work_swarpR{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+.work_year_warp1{
+  display: flex;
+  padding-left:40px;
+  padding-bottom: 40px;
+}
+.work_year_warp{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 97%;
+}
+
+.font_year {
+  width:100px;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family:'DM Sans', sans-serif;
+  font-weight: bold;
+}
+.work_text{
+  line-height:1.7;
+  font-family:'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+.work_text > span{
+  font-size: 1.3rem;
+  padding-left:40px;
+}
 .certificate{
   width:100%;
   height:200px;
