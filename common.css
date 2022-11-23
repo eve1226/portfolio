@@ -175,6 +175,8 @@ ul li {
   grid-area: icon;
   opacity: 0.9;
   padding-top:3px;
+  width: 32px;
+  height: 32px;
 }
 .nameN{
   grid-area: nameN;
@@ -188,10 +190,7 @@ ul li {
   color:#555555;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
-}
+
 
 .article_title{
   display: flex;
@@ -465,6 +464,8 @@ a.button:hover{
   border-bottom: 1px solid #3586ff;
 }
 
+
+
 footer {
   position: relative;
   bottom: 0px;
@@ -595,41 +596,56 @@ footer .wave#wave4{
   .navbar_menu.active {
     display: flex;
   }
-}
 
-/*모바일*/
-/* @media screen and (max-width: 320px) { 
-  .navbar {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: red;
-    padding: 8px 24px;
-  }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .aboutMe {
+    display: block;
   }
   
-  .navbar_menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+  /* 커리어 */
+  .work_warp{
+    display: block;
+    justify-content:flex-start;
     width: 100%;
   }
 
-  .navbar_menu li {
-    padding-top: 20px;
+  .work_swarpL{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+  .work_swarpR{
+    display: flex;
+    flex-direction: column;
+    width:100%;
   }
 
-  .navbar_toggleBtn{
-    display: block;
-    position: absolute;
-    right: 10px;
-    padding-top:12px;
+  .work_year_warp1{
+    display: flex;
+    padding-left:20px;
+    padding-bottom: 20px;
+  }
+  .work_year_warp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97%;
   }
   
-  .navbar_menu.active {
-    display: flex;
+  .font_year {
+    font-size: 2rem;
+    color: #ffffff;
+    font-family:'DM Sans', sans-serif;
+    font-weight: bold;
   }
-} */
+  .work_text{
+    line-height:1.7;
+    font-family:'Noto Sans KR', sans-serif;
+    font-size: 14px;
+  }
+  
+  .work_text > span{
+    font-size: 1.3rem;
+    padding-left:10px;
+  }
+
+}
