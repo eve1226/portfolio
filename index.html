@@ -7,18 +7,22 @@
   <title>KimSooMi Portfolio</title>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- CSS -->
   <link rel="stylesheet" href="common.css">
-  <script src="main.js" defer></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <script src="main1.js" defer></script>
 </head>
 
 <body>
   <nav class="navbar">
     <div class="navbar_logo"><img src="images/logo.png"></div>
     <ul class="navbar_menu">
-      <li><a href="">About me</a></li>
-      <li><a href="">Certificate</a></li>
-      <li><a href="">Career</a></li>
-      <li><a href="">Design</a></li>
+      <li><a href="#ABOUT">About me</a></li>
+      <li><a href="#WORK">Work Experience</a></li>
+      <li><a href="#Certificate">Certificate</a></li>
+      <li><a href="#Career">Career</a></li>
+      <li><a href="#Design">Design</a></li>
     </ul>
     <a href="#" class="navbar_toggleBtn">
       <img src="images/Hamburger_icon.svg">
@@ -42,7 +46,7 @@
   </section>
 
   <!--About Me-->
-  <section class="wrap">  
+  <section class="wrap" id="ABOUT">  
     <article class="aboutMe">
 
       <div class="article_title">
@@ -102,7 +106,7 @@
   </section>
 
   <!--workExperience-->
-  <section class="wrap1"> 
+  <section class="wrap1" id="WORK"> 
     <article class="workExperience">
 
       <div class="work_title">
@@ -119,7 +123,7 @@
               <div class="font_year">2007</div>
               <div class="font_year">2009</div>
             </div>
-            <div class="work_text"><span>(주)네오텍 웹에이전시</span><br />
+            <div class="work_text"><span>▎(주)네오텍 웹에이전시</span><br />
               <ul>
                 <li>경주문화관광 웹사이트 디자인 및 웹표준화 퍼블리싱</li>
                 <li>통영해양경찰서 웹사이트 디자인 및 퍼블리싱</li>
@@ -141,7 +145,7 @@
               <div class="font_year">2010</div>
               <div class="font_year">2011</div>
             </div>
-            <div class="work_text"><span>프라피티 웹에이전시</span><br />
+            <div class="work_text"><span>▎프라피티 웹에이전시</span><br />
               <ul>
                 <li>티켓몬스터 모바일웹 디자인 및 퍼블리싱(파견근무)</li>
                 <li>FE STORY 임부복 여성의류 쇼핑몰 디자인</li>
@@ -162,7 +166,7 @@
               <div class="font_year">2011</div>
               <div class="font_year">2013</div>
             </div>
-            <div class="work_text"><span>이철헤어커커</span><br />
+            <div class="work_text"><span>▎이철헤어커커</span><br />
               <ul>
                 <li>네이버 블로그/페이스북/트위터 시술 후기 등록</li>
                 <li>행사 이벤트 배너 디자인</li>
@@ -176,7 +180,7 @@
               <div class="font_year">2016</div>
               <div class="font_year"></div>
             </div>
-            <div class="work_text"><span>스퀘어101 여성의류 쇼핑몰</span><br />
+            <div class="work_text"><span>▎스퀘어101 여성의류 쇼핑몰</span><br />
               <ul>
                 <li>쇼핑몰 상세페이지 디자인</li>
                 <li>모델/의류 사진촬영 및 편집</li>
@@ -191,7 +195,7 @@
               <div class="font_year">2018</div>
               <div class="font_year">2019</div>
             </div>
-            <div class="work_text"><span>(주)버기트라이크 쇼핑몰</span><br />
+            <div class="work_text"><span>▎(주)버기트라이크 쇼핑몰</span><br />
               <ul>
                 <li>유아장난감 쇼핑몰 상세페이지 기획/디자인/운영/관리/등록</li>
                 <li>각종 생활용품 쇼핑몰 상세페이지 기획/디자인/운영/관리/등록</li>
@@ -207,7 +211,7 @@
               <div class="font_year">2022</div>
               <div class="font_year"></div>
             </div>
-            <div class="work_text"><span>(주)핌</span><br />
+            <div class="work_text"><span>▎(주)핌</span><br />
               <ul>
                 <li>회사 홈페이지 디자인/퍼블리싱/유지보수</li>
                 <li>회사 로고/명함/굿즈 디자인</li>
@@ -223,25 +227,175 @@
   </section>
 
   <!--Certificate-->
-  <section class="wrap"> 
-    <article class="certificate">
-      <div class="article_title">CERTIFICATE</div>
-    </article>
+  <section class="wrap2" id="Certificate"> 
+    <div class="certificate">
+      <div class="certificate_title">
+        <div><ion-icon name="attach" class="icon_clip"></ion-icon></div>
+        <div class="title_line_work">SKILLS & CERTIFICATE</div>
+      </div>
+    </div>
+    <div class="certificate_wrap">
+      <div class="certificate_card">
+        정보처리산업기사<br /><hr/><br />
+        <img src="images/skills01.jpg" class="img_300px">
+      </div>
+      <div class="certificate_card">
+        웹디자인기능사<br /><hr/><br />
+        <img src="images/skills02.jpg" class="img_300px">
+      </div>
+      <div class="certificate_card">
+        컴퓨터그래픽스운용기능사<br /><hr/><br />
+        <img src="images/skills03.jpg" class="img_300px">
+      </div>
+    </div>
   </section>
 
-  <!--Career-->
-  <section class="wrap"> 
-    <article class="career">
-      <div class="article_title">CAREER</div>
-    </article>
-  </section>
+  <!--CI/BI Design-->
+  <div id="Design"> 
+    <div class="design">
+      <div class="article_title2">
+        <div><ion-icon name="attach" class="icon_clip blue"></ion-icon></div>
+        <div class="blueLine">CI/BI DESIGN</div>
+      </div>
+    </div>
 
-  <!--Design-->
-  <section class="wrap"> 
-    <article class="design">
-      <div class="article_title">DESIGN</div>
-    </article>
-  </section>
+    <div class="swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+
+        <div class="slide swiper-slide">
+          <img src="images/1.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/2.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/3.jpg" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/4.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/5.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/6.jpg" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/7.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/8.jpg" alt="" class="image" />
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+  <!--banner Design-->
+  <div id="Design"> 
+    <div class="design">
+      <div class="article_title2">
+        <div><ion-icon name="attach" class="icon_clip blue"></ion-icon></div>
+        <div class="blueLine">BANNER DESIGN</div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+
+        <div class="slide swiper-slide">
+          <img src="images/1-1.jpg" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/1-2.png" alt="" class="image" />
+        </div>
+        
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+  <!--Web Design-->
+  <div id="Design"> 
+    <div class="design">
+      <div class="article_title2">
+        <div><ion-icon name="attach" class="icon_clip blue"></ion-icon></div>
+        <div class="blueLine">WEB DESIGN</div>
+      </div>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+
+        <div class="slide swiper-slide">
+          <img src="images/01_.png" alt="" class="image" />
+          <!-- <div class="image-data">
+            <span class="text">1Enjoy the finest coffee drinks.</span>
+            <h2>Enjoy the finest <br /> coffee drinks.</h2>
+            <a href="#" class="button">About Us</a>
+          </div> -->
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/02_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/03_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/04_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/05_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/06_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/07_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/08_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/09_.png" alt="" class="image" />
+        </div>
+
+        <div class="slide swiper-slide">
+          <img src="images/10_.png" alt="" class="image" />
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
 
   <footer>
     <div class="waves">
@@ -258,5 +412,26 @@
     <div class="copyright">Copyright2022 Kim Soo Mi. All rights reserved.</div>
   </footer>
 
+    <!-- Swiper JS -->
+    <script async src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script async>
+      var swiper = new Swiper(".mySwiper", {
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
