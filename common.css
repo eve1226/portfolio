@@ -655,7 +655,13 @@ footer .wave#wave4{
     border-radius: 0px;
     border:none;
   }
+
+  .modal_close_btn{
+    width: 100%;
+    object-fit: cover;
+  }
 }
+
 
 #my_modal {
   display: none;
